@@ -23,7 +23,7 @@
   font-size: 60px !important;
 }
 .animatetext {
-  animation: glitch 1s linear infinite;
+  animation: glitch 4s linear infinite;
   color: #fff;
   font-size: 30px;
   font-family: "Fira Mono", monospace;
@@ -52,7 +52,7 @@
 }
 
 .animatetext:before {
-  animation: glitchTop 1s linear infinite;
+  animation: glitchTop 4s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
@@ -72,7 +72,7 @@
 }
 
 .animatetext:after {
-  animation: glitchBotom 1.5s linear infinite;
+  animation: glitchBotom 4s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
@@ -95,7 +95,7 @@
   .animatetext {
     animation: none !important;
   }
-  .animatetext:after, .animatetext:before {
+  .animatetext:after .animatetext:before {
     animation: none !important;
     display: none !important;
   }
